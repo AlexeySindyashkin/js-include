@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+	<script type="text/javascript" src="array.extend.js"></script> 
+	<script type="text/javascript" src="include.extend.js"></script> 
+	<style>
+		.code-s {border: 1px solid #dfdfdf;background-color: rgba(100,200,100,0.1);padding: 10px;}
+	</style>
+<script type="text/javascript">
+//<!--
+include("./test.js");
+//-->
+</script>
+  </head>
+  <body>
+<div id='log'></div>
+
+<script type="text/javascript">
+//<!--
+var o = document.getElementById('log');
+var html = "<p><b>1. Include file:</b><div class='code-s'>include(\"./test.js\");<br/></div>";
+html+="<p><b>2. Create object \"ob\"</b><div class='code-s'>var t = new ob();<br/></div>";
+html+="<p><b>3. Show object info</b><div class='code-s'>console.log(t); // ob {ar: Array[0], set: function, clear: function}<br/></div>";
+
+
+var t = new ob();
+ t.clear();
+console.log(t);
+o.innerHTML=html;
+
+//-->
+</script>
+
+
+  </body>
+</html>
